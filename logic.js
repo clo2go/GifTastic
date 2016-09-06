@@ -1,6 +1,6 @@
 var gif = {
         // Main Array
-        topicArray: ["dogs", "cats", "farts", "birds", "robots", "Haramabe", "antelope"],
+        topicArray: ["dogs", "cats", "farts", "birds", "robots", "Haramabe"],
         // image state
         imgState: "still",
         //Array to hold new topics
