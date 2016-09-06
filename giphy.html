@@ -5,42 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Giphy</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- Bootstrap CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
 </head>
 
 <body>
-    <div class="container">
-        <h1>GifDazzler</h1>
-
-
-<!-- Gif Buttons Added -->
-        <button data-search="bad+dogs">DOGS</button>
-        <!-- class="btn btn-default" id="giphBtn" -->
-        <button data-search="bad+cats">CATS</button>
-         <!-- class="btn btn-default" id="giphBtn" -->
-        <button data-search="hilarious+farts">FARTS</button>
-         <!-- class="btn btn-default" id="giphBtn" -->
-        <button data-search="crazy+birds">BIRDS</button>
-         <!-- class="btn btn-default" id="giphBtn" -->
-        <button data-search="clown+robots">ROBOTS</button>
-         <!-- class="btn btn-default" id="giphBtn" -->
-       
-<!-- Search Button -->
-       <input type="text" class="form-control" id="search"></div>
-        <button type="submit" class="btn btn-default" id="searchBtn">GifDazzler</button></div>
-       
-<!-- Gif Area -->
-       <div id="GIFarea"></div>
-        <div>
-        <div>
+<!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div class="jumbotron-header text-center">
+                <h1>GiphyDazzler</h1>
+                <p>Add words. Generate funny gif buttons.</p>
+                    </div>
+                        <div class="form-group">
+                          <!-- Input line -->  
+                            <!-- <NEED TO HAVE INPUT CONTENT CLEAR AFTER ENTER or CLICK> -->
+                            <input type="text" class="form-control input-generate" placeholder="What's so funny, punk?">
+                        </div>
+                <!-- Add Search Giph Button -->
+                        <button data-input type="button" class="btn btn-primary" id="gifAddBtn" data-target="#button-area">GifDazzler</button>
+                        <button class="btn btn-warning clear-btn" id="clearBtn">Clear Data</button>
+                </div>
+            </div>
+        </div>
         
+<!-- Button Panel -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Button-loads of Funny</h3>
+                    Click buttons to activate Giphy magic!.  
+                </div>
+                <!-- Button Dump -->
+                    <div class="">
+                        <div>                
+                        <div id="button-area"></div>
+                        </div>
+                    </div >
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Gif Panel -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 main">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title">Funny Lookout</h3>
+                Click on individual image to unlock giphy madness!
+            </div>
+         <!--  -->
+            <!-- <h7>Click on an image to play or pause it!</h7> -->
+            <div class="row placeholders" id="gif-content"></div>
+        </div>
+        </div>
+    </div>
+</div>    
 
-        
-    
-    <!-- </div> -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="logic.js"></script>
