@@ -55,7 +55,7 @@ var gif = {
             var topic = encodeURIComponent(topic).replace(/%20/g, '+');
 
             // Establish query URL, metting GIPHY API requirements
-            var queryUrl = "https://api.giphy.com/v1/gifs/search?q=funny+" + topic + "&api_key=dc6zaTOxFJmzC&limit=10";
+            var queryUrl = "https://api.giphy.com/v1/gifs/search?q=funniest+" + topic + "&api_key=dc6zaTOxFJmzC&limit=10";
             console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
             console.log("queryUrl: " + queryUrl);
             console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
